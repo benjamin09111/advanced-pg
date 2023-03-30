@@ -1,0 +1,51 @@
+Cree los métodos get y set que estime convenientes.
+
+
+1. Su mejor amigo le pide crear un programa que organice sus herramientas
+que utiliza en su Peluquería. Cada herramienta posee un tiempo de usado
+(antigüedad en meses), un nombre y la cantidad de veces que se ha utilizado.
+El usuario ingresa por pantalla lo necesario:
+
+- Guarde N herramientas. 
+
+- Imprima todas las herramientas.
+
+- Muestre la herramienta con más tiempo de uso.
+
+
+2. Se le ha contratado para calcular la ganancia de una Tienda de Películas.
+Cada película tiene un nombre, autor y precio. Se le pide:
+
+- Guarde e ingrese 3 películas.
+
+- Calcular la ganancia si se vendieran las películas. El costo de inventario
+es del 20% de la venta final.
+
+- Mostrar los precios de las películas con sus nombres.
+
+
+3. Debido a la moda de inteligencia artificial, se le pide organizar
+distintos algoritmos para máquinas. Cada algoritmo tiene un código
+(como si fuera el nombre del algoritmo) y el tiempo de ejecución. 
+
+- Guarde N algoritmos.
+
+- El usuario ingresa el código del algoritmo, usted debe mostrar su tiempo de
+ejecución solo si existe. 
+
+- Muestre el último algoritmo ingresado (con sus datos)
+
+
+
+4. Usted ha creado un super mega carrete, pero le da flojera hacer una lista
+de invitados a lápiz. Cree un programa que almacene Invitados, los cuales
+tienen un nombre y edad.
+
+- Ingrese N invitados. 
+
+- Reciba un invitado, consulte su nombre y edad, compruebe si está en la lista
+de invitados y si es mayor de edad, en ese caso puede entrar.
+
+- Según la cantidad de invitados se calcula el costo de la comida. Por cada
+invitado mayor a 30, sale 4000, y entre 18 a 30, 3500. Muestre el costo total.
+
