@@ -1,0 +1,16 @@
+1.- Usted ha programado un Estuche virtual. Contiene diferentes Utiles escolares.
+Estos poseen un precio, antiguedad y un nombre. Permita mostrar todos los utiles.
+Muestre el util más caro.
+
+
+2.- En un Garaje de mecánica hay distintos Robots. Estos tienen un nombre, peso y
+costo de fabricación. Permita preguntar un nombre y obtener el robot asociado.
+Además, es posible obtener el promedio de todos los pesos de los robots.
+
+
+
+
+
+3.- Usted crea una lista de reproducción Spotify que contiene Canciones. Cada canción
+tiene un nombre, artista y popularidad. Pida por pantalla los datos de las canciones
+y cree una playlist, pregunte el tamaño también. Finalmente muestre la playlist.
