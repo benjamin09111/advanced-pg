@@ -1,0 +1,239 @@
+codigo 1
+
+
+#include <iostream>
+using namespace std;
+
+/*
+3.- Usted crea una lista de reproducción Spotify que contiene Canciones. Cada canción
+tiene un nombre y popularidad. Pida por pantalla los datos de las canciones
+y cree una playlist, pregunte el tamaño también. Finalmente muestre la playlist y la popularidad de la canción pedida.
+*/
+
+class Cancion{
+  private:
+    string nombre;
+    int popularidad;
+  public:
+    Cancion(string nombre, int popularidad){
+      this->nombre = nombre;
+      this->popularidad = popularidad;
+    }
+    string getNombre(){
+      return nombre;
+    }
+    int getPopularidad(){
+      return popularidad;
+    }
+    void imprimir(){
+      cout<<"Nombre: "<<nombre<<endl;
+      cout<<"Popularidad: "<<popularidad<<endl;
+    }
+};
+
+
+int main() {
+  int n;
+  cout<<"Ingrese tamanio de la playlist: "<<endl;
+  cin>>n;
+
+  Cancion *playlist[n];
+  
+  int popularidad;
+  string nombre;
+  
+  for(int i=0; i<n; i++){
+
+    cout<<"Ingrese nombre: "<<endl;
+    cin>>nombre;
+    cout<<"Ingrese popularidad:"<<endl;
+    cin>>popularidad;
+
+    playlist[i] = new Cancion(nombre,popularidad);
+
+/*
+Cancion *s = new Cancion(nombre,popularidad);
+
+playlist[i] = s;
+*/  
+  }
+
+  //imprimir
+
+  cout<<"Playlist: "<<endl;
+  for(int i=0; i<n; i++){
+    playlist[i]->imprimir(); 
+    cout<<endl;
+  }
+  cout<<endl;
+
+  string pedido;
+  
+  cout<<"Ingrese el nombre de la cancion: "<<endl;
+  cin>>pedido;
+
+  bool encontrado = false;
+  int popularidad_buscada=0;
+  
+  for(int i=0; i<n; i++){
+
+    if(playlist[i]->getNombre() == pedido){
+      encontrado = true;
+      popularidad_buscada = playlist[i]->getPopularidad();
+      break;
+    }
+  }
+
+  if(encontrado){
+    cout<<"Popularidad: "<<popularidad_buscada<<endl;
+  }else{
+    cout<<"No se encontro."<<endl;
+  }
+  
+
+
+codigo 2
+
+
+#include <iostream>
+using namespace std;
+
+/*
+2.- En un Garaje de mecánica hay distintos Robots. Estos tienen un nombre, peso y
+costo de fabricación. Permita preguntar un nombre y obtener el robot asociado.
+Además, es posible obtener el promedio de todos los pesos de los robots.
+*/
+
+class Robot{
+  private:
+    string nombre;
+    int costo_f;
+    float peso;
+  public:
+    Robot(string nombre, int costo_f, float peso){
+      this->nombre = nombre;
+      this->costo_f = costo_f;
+      this->peso = peso;
+    }
+    float getPeso(){
+      return peso;
+    }
+    string getNombre(){
+  return nombre;
+}
+    void imprimir(){
+      cout<<"Nombre: "<<nombre<<endl;
+      cout<<"Peso: "<<peso<<endl;
+      cout<<"Costo de fabricacion: "<<costo_f<<endl;
+    }
+};
+
+int main() {
+    Robot *r1 = new Robot("Pepe",1500,17.2);
+    Robot *r2 = new Robot("Juan",2000,20.7);
+    Robot *r3 = new Robot("Karen",3000,15.4);
+
+  //n = 3
+  Robot *garaje[] = {r1,r2,r3};
+
+  float promedio=0;
+  
+  for(int i=0; i<3; i++){
+    promedio = promedio + garaje[i]->getPeso();
+  }
+  
+  cout<<"Promedio de pesos: "<<promedio/3<<endl;
+
+  //buscar
+  string pedido;
+  bool encontrado = false;
+  cout<<endl;
+  cout<<"Nombre del robot: "<<endl;
+  cin>>pedido;
+
+  for(int i=0; i<3; i++){
+    if(garaje[i]->getNombre() == pedido){
+      encontrado = true;
+      garaje[i]->imprimir();
+      break;
+    }
+  }
+
+  if(encontrado==false){
+    cout<<"No se encontro."<<endl;
+  }
+  
+  
+    return 0;
+}
+
+codigo 3
+
+
+#include <iostream>
+using namespace std;
+
+/*
+1.- Usted ha programado un Estuche virtual. Contiene diferentes Utiles escolares.
+Estos poseen un precio, antiguedad y un nombre. Permita mostrar todos los utiles.
+Muestre el util más caro.
+*/
+
+class Util{
+  private:
+    string nombre;
+    int precio;
+    int antiguedad;
+  public:
+    Util(string nombre, int precio, int antiguedad){
+      this->nombre = nombre;
+      this->precio = precio;
+      this->antiguedad = antiguedad;
+    }
+    void imprimir(){
+      cout<<"Nombre: "<<nombre<<endl;
+      cout<<"Precio: "<<precio<<endl;
+      cout<<"Antiguedad: "<<antiguedad<<endl;
+    }
+  int getPrecio(){
+    return precio;
+  }
+};
+
+
+int main() {
+
+  Util *u1 = new Util("LapizPasta",250,6);
+  Util *u2 = new Util("Goma",300,2);
+  Util *u3 = new Util("Regla",500,3);
+  Util *u4 = new Util("LapizColor",150,4);
+  Util *u5 = new Util("LapizMina",200,1);
+
+  Util *estuche[] = {u1,u2,u3,u4,u5};
+
+  int referencia = estuche[0]->getPrecio();
+  
+  for(int i=0; i<5; i++){
+
+    if(estuche[i]->getPrecio() > referencia){
+      referencia = estuche[i]->getPrecio();
+    }
+   
+  }
+
+  for(int i=0; i<5; i++){
+    if(estuche[i]->getPrecio() == referencia){
+      estuche[i]->imprimir();
+      break;
+    }
+  }
+
+  cout<<endl<<endl;
+  for(int i=0; i<5; i++){
+    estuche[i]->imprimir();
+    cout<<endl;
+  }
+  
+  
+    return 0;
+}
