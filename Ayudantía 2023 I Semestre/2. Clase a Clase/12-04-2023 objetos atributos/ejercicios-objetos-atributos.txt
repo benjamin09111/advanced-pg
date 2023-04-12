@@ -1,0 +1,10 @@
+1.- Un Profesor contiene su salario mensual, y además posee una Identificacion, la cual consta de un nombre y edad.
+Cree ambas clases. Cree un método que compare con otro Profesor y mencione cuál tiene más edad. Cree una función imprimir.
+
+2.- Cree una Tienda de herramientas. Esta posee el nombre y además la información de sus Herramientas. Estas indican
+la cantidad de herramientas y el precio de cada una (todas valen lo mismo).Cree ambas clases.
+Cree un método que permita comparar con otra Tienda, y muestre cuál tiene mayor precio total de todas sus herramientas.
+
+3.- Un Gimnasio posee un nombre, precio del gimnasio y contiene a su Dueño, este posee un nombre y edad. Cree ambas clases.
+Permita comparar dos gimnasios y ver cual gimnasio es más caro. Además cree otro método que compare la edad de ambos
+dueños, muestre por pantalla además la información de cada uno para ver la comparación.
