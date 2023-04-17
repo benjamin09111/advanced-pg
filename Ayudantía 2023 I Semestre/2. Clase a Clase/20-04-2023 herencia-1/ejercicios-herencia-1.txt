@@ -1,0 +1,12 @@
+1.- Cree la clase animal, la cual posee una edad y si está vivo o no. Cree la clase pájaro, la cual tiene de hijos
+un aguila y una gallina, y aparte la clase Acuático.
+
+2.- Existen diferentes herramientas: hacha, pala, las cuales tienen un precio, y un martillo, el cual además tiene
+una durabilidad. Cree las herencias. Cree una interfaz, con opciones: crear y mostrar herramienta. Mostar 
+el total de herramientas creadas. Salir.
+
+3.- Hay diferentes alimentos dentro de una tienda. Frutas, que poseen un color, Galletas, que posee una cantidad por bolsa y
+Lácteos, que poseen cantidad de proteínas. Todas las frutas tienen un precio y un stock asociado. 
+Cree en el main las clases con su respectivo stock. Cree una interfaz con: 1. comprar n frutas. 2. mostrar todas las frutas y 
+stock. 3. salir.
+Tome en cuenta que tiene todo el dinero del mundo para comprar, solo disminuye el stock.
