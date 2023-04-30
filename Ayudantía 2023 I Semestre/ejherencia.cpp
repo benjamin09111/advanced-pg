@@ -11,7 +11,7 @@ class Padre{
 		int getEdad(){
 			return edad;
 		}
-		void imprimir(){
+		virtual void imprimir(){
 			cout<<"Soy el padre."<<endl;
 		}
 };
@@ -26,7 +26,7 @@ class HijoUno : public Padre{
 		int getMonto(){
 			return monto;
 		}
-		void imprimir(){
+		virtual void imprimir(){
 			cout<<"Soy el hijo 1."<<endl;
 		}
 };
@@ -38,10 +38,10 @@ class HijoDos : public Padre{
 		HijoDos(int edad, int promedio) : Padre(edad){
 			this->promedio = promedio;
 		}
-		int getMonto(){
-			return monto;
+		int getPromedio(){
+			return promedio;
 		}
-		void imprimir(){
+		virtual void imprimir(){
 			cout<<"Soy el hijo 2."<<endl;
 		}
 };
