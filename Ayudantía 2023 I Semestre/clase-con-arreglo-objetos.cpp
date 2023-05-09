@@ -1,3 +1,7 @@
+/*
+Este codigo está realizado de manera rápida, en caso de encontrar algún error.
+*/
+
 #include<iostream>
 using namespace std;
 
@@ -64,6 +68,24 @@ class Colegio{
 				estudiantes[i] = NULL;
 			}
 		}
+		void borrarEstudianteEspecificoIndex(int index){
+			if(estudiantes[index] != NULL){
+				estudiantes[i] = NULL;
+				return true;
+			}
+			return false;
+		}
+		void borrarEstudianteEspecificoNombre(string nombre){
+			for(int i=0; i<10; i++){
+				if(estudiantes[i] != NULL){
+					if(estudiantes[i]->getNombre()==nombre)}
+						estudiantes[i] = NULL;}
+						return true;
+					}
+				}
+			}
+			return false;
+		}
 		void obtenerNombres(){
 			for(int i=0; i<10; i++){
 				if(estudiantes[i]!=NULL){
@@ -90,7 +112,5 @@ class Colegio{
 
 
 int main (){
-	
-	
 	return 0;
 }
