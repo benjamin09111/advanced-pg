@@ -14,6 +14,9 @@ Además, la zona actuática posee kilos de comida, la de
 mamíferos la cantidad de huevos actualmente y la de 
 aves la cantidad de altura que posee la zona en km.
 
+Muestre las cantidades del animal y el nombre del animal de cada zona.
+Cree una clase Zoo que guarde Zonas.
+
 2.
 En una universidad se registra a cada alumno y a los 
 trabajadores. Cada uno tiene un nombre y rut asociado.
