@@ -1,0 +1,19 @@
+*EJERCICIOS VECTORES*
+
+Cree la clase Estudiante con un nombre, edad, promedio y
+si es mayor de edad o no (bool que depende de edad).
+
+1.- Cree una interfaz que permita:
+
+- Ingresar estudiantes.
+- Obtener promedio total de estudiantes.
+- Mostrar cuantos estudiantes son mayores de edad.
+- Preguntar un nombre y verificar si ese estudiante existe.
+
+2.- Cree una clase Colegio que contiene un vector de 
+Estudiantes.
+
+- Permita agregar estudiantes.
+- Muestre todos los nombres de los estudiantes.
+- Mostrar el mayor promedio del estudiante.
+- Mostrar cuantos estudiantes son mayores de edad.
