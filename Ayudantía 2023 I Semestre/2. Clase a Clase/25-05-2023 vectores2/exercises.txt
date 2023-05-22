@@ -1,0 +1,38 @@
+***EJERCICIOS VECTORES 2***
+
+1.
+Consulte nombres a ingresar hasta que el usuario quiera
+detenerse. Estos nombres serán una lista de invitados
+a un evento.
+
+Cree una función que reciba un vector y un nombre,
+y retorne la posición en caso de existir ese
+nombre en la lista, -1 en caso de no existir.
+Debe tener en cuenta que si el vector está vacío, se
+debe indicar por pantalla.
+
+Luego, borre ese nombre de la lista.
+
+Cuando reciba al invitado, debe obtener su dinero de
+entrada, que es la edad multiplicada por 100.
+
+Esta información debe sacarla de la clase PERSONA,
+que posee nombre y edad.
+
+Repita este proceso hasta que la lista quede vacía.
+
+Muestre la suma del vector creado con los dineros totales.
+
+2.
+Cree la clase PRODUCTO que posee un precio y una id.
+En la ciudad existen tres tiendas, todas parten con 0
+productos.
+
+Cree una interfaz que permita ingresar uno a uno los
+productos según la tienda indicada. Además se puede:
+
+- Mostrar todos los productos de cada tienda.
+- Mostrar la tienda que posee 0 productos.
+- Mostrar el dinero total de cada tienda según sus productos.
+
+
