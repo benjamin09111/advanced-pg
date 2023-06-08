@@ -34,8 +34,8 @@ int main (){
 	productos.insert( par("5!4-1", p3) );
 	productos.insert( par("62$_0", p4) );
 	
-	//eliminar
-	productos.erase("5!4-1");
+	//eliminar: 1 si es que se elimina, 0 en caso contrario
+	cout<<productos.erase("5!4-1");
 	
 	//recorrer y mostrar
 	
