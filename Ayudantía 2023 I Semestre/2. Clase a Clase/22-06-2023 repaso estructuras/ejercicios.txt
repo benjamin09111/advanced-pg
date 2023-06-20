@@ -1,0 +1,70 @@
+---EJERCICIO UNO---
+
+Se tiene un mapa que tiene el nombre del 
+alumno (asuma que siempre sera diferente)
+y un vector de notas de este. Almacene en el
+mapa los datos de n alumnos. Luego:
+
+- Imprima el mapa en forma clara
+- Muestre el promedio de cada alumno
+- Muestre el mayor promedio (puede usar otro vector)
+
+---EJERCICIO DOS---
+
+Se tienen dos mapas que permiten simular una
+base de datos relacional. Uno esta dentro de
+otro.
+
+Venta (1)
+id_producto / (2)
+
+Venta_detalle (2)
+nombre / monto
+
+
+Ingrese datos a los dos mapas de 
+forma correcta. Simule las
+transacciones de venta.
+
+- Se pide mostrar todo el mapa.
+- Se pide mostrar el detalle del
+id_producto ingresado por pantalla
+(buscar).
+
+---EJERCICIO TRES---
+
+Se tiene una clase llamada historial
+que va almacenando las web y muestra
+la ultima web visitada.
+Se tiene una clase Web con nombre y la 
+url del sitio.
+Usando pilas y colas (la más adecuada)
+debe:
+
+Con un ciclo while e interfaz:
+
+- Poder hacer el registro de una web vista.
+- Imprimir el historial actual sin que se borre.
+- Borrar el historial.
+- Obtener ultima pagina visitada.
+
+
+---EJERCICIO CUATRO---
+
+Se tiene la clase Cancion con un nombre y un 
+artista. Ademas, se tiene la clase Playlist.
+Utilice una cola dentro de Playlist, además del
+nombre de la playlist. Cree una interfaz con
+ciclo while que vaya mostrando la canción actual,
+además debe tener las opciones de:
+
+- Hacer un respaldo para no perder las canciones.
+Para esto cree en la clase Playlist un vector
+que vaya almacenando las canciones también.
+
+- Saltar a la siguiente canción (cola).
+- Obtener el artista de la canción actual (cola).
+- Permitir obtener cuántas canciones se han saltado/escuchado ya.
+- Imprimir todas las canciones de la playlist (vector).
+
+ 
