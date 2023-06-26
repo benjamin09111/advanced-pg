@@ -1,0 +1,17 @@
+Crear la clase con Nombre con string nombre y string apellido.
+Crear la clase Numero con primer y segundo digito string.
+
+#include <string>
+int number = 42;
+std::string str = std::to_string(number);
+
+
+Diccionario con pila: integer id curso, cola con Nombre
+
+Diccionario con cola: integer id curso, pila con Nombre
+
+Diccionario con diccionario: integer id, diccionario con rut y nombre.
+
+Vector con vectores dentro: clase Numero.
+
+
